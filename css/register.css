@@ -1,0 +1,435 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    background: linear-gradient(to right, #1B1F24, #35424A);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    gap: 64px;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 100; 
+    background: linear-gradient(to right, #1B1F24, #35424A); 
+    padding: 0 1rem;
+}
+
+#hamburger-button {
+    display: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.hamburger-item {
+    display: none;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dropdown{
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.will-logo {
+    width: 180px;
+    height: auto;
+}
+
+.right-text {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.right-text:hover {
+    border-bottom: 3px solid #A8FA50;
+}
+
+.register-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+}
+
+.register-wrapper {
+    margin-bottom: 2rem;
+}
+
+.register-section {
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right, #041107, #050100);
+    margin: 3rem 7rem 0rem 7rem;
+    border-radius: 12px;
+}
+
+.image {
+    margin-left: -100px;
+}
+
+.register-title {
+    display: flex;
+    color: white;
+    font-weight: 800;
+    /* gap: 10px; */
+}
+
+.s-title, .i-title {
+    color: #A8FA50;
+    font-size: 38px;
+}
+
+.first-title, .sec-title {
+    font-size: 38px;
+}
+
+.i-title {
+    margin-left: 1rem;
+}
+
+.register-description {
+    display: flex;
+    color: white;
+    /* flex-direction: column; */
+    /* gap: -5px; */
+    font-size: 15px;
+}
+
+.green {
+    color: #A8FA50;
+}
+
+.basic-description {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.input-form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.input-form input {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.error-message {
+    color: red;
+}
+
+.input-form input {
+    padding: 5px 10px;
+    border-radius: 6px;
+    accent-color: #A8FA50;;
+}
+
+.gender-form {
+    display: flex;
+    gap: 12px;
+}
+
+.submit-button {
+    border: none;
+    font-weight: 600;
+    padding: 4px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    background-color: #A8FA50;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1F24;
+    margin-top: 4rem;
+    padding: 1rem 8rem 3rem 5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo{  
+    width: 250px;
+}
+
+.footer-content{
+    display: flex;
+    padding: 2rem 4rem 2rem 4rem;
+    justify-content: center;
+    gap: 12rem;
+    margin-bottom: 1.8rem;
+}
+
+.desc-box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.desc-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.desc-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.desc-info{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.desc-info a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(138, 138, 138);
+}
+
+.desc-info a:hover{
+    color: white;
+}
+
+.play-logo {
+    width: 8.3rem;
+}
+
+.app-logo {
+    width: 10rem;
+}
+
+.desc-info p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+
+.social-logo {
+    width: 24px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.copyright p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+/* Responsive 1200px*/
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    #hamburger-button {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    #hamburger-button #hamburger-img{
+        width: 70px;
+    }
+
+    #hamburger-menu{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #35424A;
+        height: 300px;
+        gap: 26px;
+        animation: dropdown 200ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+    .hamburger-item {
+        display: flex;
+    }
+
+    .hamburger-item a{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+    }
+
+    .hamburger-item a:hover{
+        border-bottom: 2px solid #A8FA50;
+    }
+}
+
+/* Responsive 768px (tablets) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    #hamburger-button {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    #hamburger-button #hamburger-img{
+        width: 70px;
+    }
+
+    #hamburger-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #35424A;
+        height: 300px;
+        gap: 26px;
+        animation: dropdown 200ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+    .hamburger-item {
+        display: flex;
+    }
+
+    .hamburger-item a{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+    }
+
+    .hamburger-item a:hover{
+        border-bottom: 2px solid #A8FA50;
+    }
+
+    .register-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        height: auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/assets/billie-register.png') no-repeat center center;
+        background-color: #000000;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .image {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+    }
+}
+
+/* Responsive 480px (mobile devices) */
+@media only screen and (max-width: 480px) {
+
+    .register-section {
+        display: flex;
+        align-items: flex-start;
+        padding: 40px;
+    }
+
+    .register-content {
+        margin: 0;
+        padding: 0;
+    }
+
+    .input-form {
+        width: 20rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+    }
+}

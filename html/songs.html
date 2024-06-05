@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willify | Songs</title>
+    <link rel="stylesheet" href="../css/songs.css">
+    <link rel="icon" href="../assets/willify-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="../js/songs.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+            <div class="logo">
+                <a href="../html/home.html"><img class="will-logo" src="../assets/willify-logo.png" alt=""></a>
+            </div>
+            <div class="navbar-title">
+                <a class="right-text" href="../html/home.html">Home</a>
+            </div>
+            <div class="navbar-title">
+                <a class="right-text" href="../html/songs.html"><span id="green-text">Songs</span></a>
+            </div>
+            <div class="navbar-title">
+                <a class="right-text" href="../html/aboutus.html">About Us</a>
+            </div>
+            <div class="navbar-title">
+                <a class="right-text" href="../html/register.html">Register</a>
+            </div>    
+            <button id="hamburger-button" onclick="toggle()">
+                <img src="../assets/hamburger.png" alt="hamburger" id="hamburger-img">
+            </button>
+    </nav>
+
+    <div id="hamburger-menu">
+        <div class="hamburger-item">
+            <a href="../html/home.html">Home</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/songs.html">Songs</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/aboutus.html">About Us</a>
+        </div>
+        <div class="hamburger-item">
+            <a href="../html/register.html">Register</a>
+        </div>
+    </div>
+
+
+    </div>
+    <section class="section-one">
+        <div class="section-one-container">
+            <p class="section-one-upper-title"> 
+                <span class="hover-text">What</span>
+                <span class="hover-text">beats</span> 
+                <span class="hover-text">will</span> 
+                <span class="hover-text">uplift</span> <br> 
+                <span class="hover-text">your</span> 
+                <span class="hover-text">spirits</span> 
+                <span class="hover-text">today?</span>
+            </p>      
+            <div class="today-hits-card">
+                <p class="today-hits-title">Today's Top Hits</p>
+                <div class="today-hits-content">
+                    <div class="line"></div>
+                        <button class="button-list" onclick="changeView('#blinding-light')">
+                            <p class="today-hits-list">Blinding Light <span class="grey-text">The Weeknd</span></p>
+                        </button>
+                    <div class="line"></div>
+                    <button class="button-list" onclick="changeView('#shape-of-you')"> 
+                        <p class="today-hits-list">Shape Of You - <span class="grey-text">Ed Sheeran</span></p>
+                    </button>
+                    <div class="line"></div>
+                    <button class="button-list" onclick="changeView('#someone-you-loved')"> 
+                        <p class="today-hits-list">Someone You Loved - <span class="grey-text">Lewis Capaldi</span></p>
+                    </button>
+                    <div class="line"></div>
+                    <button class="button-list" onclick="changeView('#lucid-dreams')"> 
+                        <p class="today-hits-list">Lucid Dreams - <span class="grey-text">Juice WRLD</span></p>
+                    </button>
+                    <div class="line"></div>
+                    <button class="button-list" onclick="changeView('#sunflower')"> 
+                        <p class="today-hits-list">Sunflower - <span class="grey-text">Post Malone</span></p>
+                    </button>
+                    <div class="line"></div>
+                    <button class="button-list" onclick="changeView('#daylight')"> 
+                        <p class="today-hits-list">Daylight - <span class="grey-text">David Kushner</span></p>
+                    </button>
+                    <div class="line"></div>
+                    <button class="button-list" onclick="changeView('#older')"> 
+                        <p class="today-hits-list">Older - <span class="grey-text">Sasha Alex Sloan</span></p>
+                    </button>
+                    <div class="line"></div>
+                    <button class="button-list" onclick="changeView('#always-ill-care')"> 
+                        <p class="today-hits-list">always i'll care - <span class="grey-text">Jeremy Zucker</span></p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="most-streamed-title">
+        <p class="section-two-title">MOST STREAMED <span id="green-text">SONGS</span></p>
+    </div>
+
+    <section class="section-two"> 
+        <div class="song-list">
+            <a href="../html/song-details-01.html">
+                <div class="song-card">
+                    <img class="song-profile" src="../assets/blinding-light.jpg" alt="" id="blinding-light">
+                    <div class="song-title">
+                        <p>
+                            Blinding Light
+                        </p>
+                    </div>
+                    <div class="song-desc">
+                        The Weeknd
+                    </div>
+                    <div class="song-info">
+                        <p>
+                            Blinding Light is a song written by The Weeknd back in 2020. This song...
+                        </p>
+                    </div>
+                    <div class="more-button">
+                        More Information
+                    </div>
+                </div>
+            </a>
+            
+            <a href="../html/song-details-02.html">
+                <div class="song-card">
+                    <img class="song-profile" src="../assets/shape-of-you.png" alt="" id="shape-of-you">
+                    <div class="song-title">
+                        Shape Of You
+                    </div>
+                    <div class="song-desc">
+                        Ed Sheeran
+                    </div>
+                    <div class="song-info">
+                        <p>
+                            "Shape of You" by Ed Sheeran is a catchy pop song released in 2017. It talks about...
+                        </p>
+                    </div>
+                    <div class="more-button">
+                        More Information
+                    </div>
+                </div>
+            </a>
+
+            <a href="../html/song-details-03.html">
+                <div class="song-card">
+                    <img class="song-profile" src="../assets/someone-you-loved.jpg" alt="" id="someone-you-loved">
+                    <div class="song-title">
+                        Someone You Loved
+                    </div>
+                    <div class="song-desc">
+                        Lawis Capaldi
+                    </div>
+                    <div class="song-info">
+                        <p>
+                            "Someone You Loved" by Lewis Capaldi is a powerful ballad about the pain of...
+                        </p>
+                    </div>
+                    <div class="more-button">
+                        More Information
+                    </div>
+                </div>
+            </a>
+
+            <a href="../html/song-details-04.html">
+                <div class="song-card">
+                    <img class="song-profile" src="../assets/lucid-dreams.png" alt="" id="lucid-dreams">
+                    <div class="song-title">
+                        Lucid Dreams
+                    </div>
+                    <div class="song-desc">
+                        Juice WRLD
+                    </div>
+                    <div class="song-info">
+                        <p>
+                            "Lucid Dreams" by Juice WRLD, released in 2018, is a soulful track that...
+                        </p>
+                    </div>
+                    <div class="more-button">
+                        More Information
+                    </div>
+                </div>
+            </a>
+
+            <a href="../html/song-details-05.html">
+                <div class="song-card">
+                    <img class="song-profile" src="../assets/sunflower.jpg" alt="" id="sunflower">
+                    <div class="song-title">
+                        Sunflower
+                    </div>
+                    <div class="song-desc">
+                        Post Malone
+                    </div>
+                    <div class="song-info">
+                        <p>
+                            "Sunflower" by Post Malone, released in 2018 as part of the "Spider-Man: Into...
+                        </p>
+                    </div>
+                    <div class="more-button">
+                        More Information
+                    </div>
+                </div>
+            </a>
+
+            <a href="../html/song-details-06.html">
+                <div class="song-card">
+                    <img class="song-profile" src="../assets/daylight.jpg" alt="" id="daylight">
+                    <div class="song-title">
+                        Daylight
+                    </div>
+                    <div class="song-desc">
+                        David Kushner
+                    </div>
+                    <div class="song-info">
+                        <p>
+                            "Daylight" by David Kushner, released in 2023, is a serene and introspective...
+                        </p>
+                    </div>
+                    <div class="more-button">
+                        More Information
+                    </div>
+                </div>
+            </a>   
+    
+            <a href="../html/song-details-07.html">
+                <div class="song-card">
+                    <img class="song-profile" src="../assets/older.jpg" alt="" id="older">
+                    <div class="song-title">
+                        Older
+                    </div>
+                    <div class="song-desc">
+                        Sasha Alex Sloan
+                    </div>
+                    <div class="song-info">
+                        <p>
+                            "Older" by Sasha Alex Sloan, released in 2019, is a heartfelt anthem...
+                        </p>
+                    </div>
+                    <div class="more-button">
+                        More Information
+                    </div>
+                </div>
+            </a>
+    
+            <a href="../html/song-details-08.html">
+                <div class="song-card">
+                    <img class="song-profile" src="../assets/always-ill-care.jpg" alt="" id="always-ill-care">
+                    <div class="song-title">
+                        always i'll care
+                    </div>
+                    <div class="song-desc">
+                        Jeremy Zucker
+                    </div>
+                    <div class="song-info">
+                        <p>
+                            "Always, I'll Care" by Jeremy Zucker, released in 2020, is a heartfelt ballad...
+                        </p>
+                    </div>
+                    <div class="more-button">
+                        More Information
+                    </div>        
+                </div>
+            </a>
+        </div>
+
+        <div class="song-list">      
+
+        </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <img src="../assets/willify-logo.png" alt="logo" id="logo">
+                <div class="footer-content">
+                    <div class="desc-box">
+                        <p class="desc-title">HELPFUL LINKS</p>
+                        <div class="desc-content">
+                            <div class="desc-info">
+                                <a href="../html/home.html">Home</a>
+                            </div>
+                            <div class="desc-info">
+                                <a href="../html/songs.html">Songs</a>
+                            </div>
+                            <div class="desc-info">
+                                <a href="../html/aboutus.html">About Us</a>
+                            </div>
+                            <div class="desc-info">
+                                <a href="../html/register.html">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-box">
+                        <p class="desc-title">GET THE APP</p>
+                        <div class="desc-content">
+                            <div class="desc-info">
+                                <a href="https://play.google.com/store/apps/details?id=com.spotify.music&hl=id&pli=1">
+                                    <img src="../assets/playstore.png" alt="" class="play-logo">
+                                </a>
+                            </div>
+                            <div class="desc-info">
+                                <a href="https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580">
+                                    <img src="../assets/appstore.png" alt="" class="app-logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desc-box">
+                        <p class="desc-title">Social Media</p>
+                        <div class="desc-content">
+                            <div class="desc-info">
+                                <a href="https://www.instagram.com/spotify/"><img src="../assets/instagram.png" alt="location" class="social-logo"></a>
+                                <p>@Willify</p>
+                            </div>
+                            <div class="desc-info">
+                                <a href="https://x.com/Spotify?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../assets/xlogo.png" alt="location" class="social-logo"></a>
+                                <p>@Willify</p>
+                            </div>
+                            <div class="desc-info">
+                                <a href="https://www.facebook.com/SpotifyID/?brand_redir=6243987495&locale=id_ID"><img src="../assets/facebook.png" alt="location" class="social-logo"></a>
+                                <p>Willify</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="copyright">
+                    <p>Copyright © 2024 Willify</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

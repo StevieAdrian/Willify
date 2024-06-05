@@ -1,0 +1,680 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    background: linear-gradient(to right, #1B1F24, #35424A);
+}
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    gap: 64px;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 100; 
+    background: linear-gradient(to right, #1B1F24, #35424A); 
+    padding: 0 1rem;
+}
+
+#hamburger-button {
+    display: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.hamburger-item {
+    display: none;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dropdown{
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.will-logo {
+    width: 180px;
+    height: auto;
+}
+
+.right-text {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.right-text:hover {
+    border-bottom: 3px solid #A8FA50;
+}
+
+.section-one {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    height: 400px;
+    background-color: #0b547a;
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 7rem 0rem 7rem;
+    padding-left: 50px;
+    border-radius: 19px;
+}
+
+.section-one-content {
+    margin-top: 3rem;
+    flex: 1;
+    min-width: 300px;
+}
+
+.first-title, .box-desc {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 35px;
+    color: white;
+}
+
+.second-title {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 60px;
+    color: #A8FA50;
+}
+
+.listen-button {
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.section-one-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bill-img {
+    width: 100%;
+    max-width: 450px;
+    margin-right: 70px;
+    margin-top: -76px;
+}
+
+.section-information {
+    margin-top: 10rem;
+    color: white;
+    font-size: 54px;
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin-bottom: 10rem;
+    padding: 0 1rem;
+}
+
+#info-pad {
+    margin-bottom: 2rem;
+}
+
+.section-information-container {
+    display: flex;
+    margin: 0 7rem 0 7rem;
+    position: relative;
+}
+
+.section-description {
+    font-size: 21px;
+    margin: 0rem 7rem 1rem 7rem;
+}
+
+.wrapper {
+    position: relative;
+    margin-left: 50rem; 
+}
+
+.line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .line9 {
+    position: absolute;
+    bottom: 0;
+    width: 5px; 
+    background-color: white;
+}
+
+.line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .line9 {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    background-color: rgb(121, 23, 141);
+}
+
+.line1 { left: 90px; }
+.line2 { left: 95px; }
+.line3 { left: 130px; }
+.line4 { left: 165px; }
+.line5 { left: 200px; }
+.line6 { left: 235px; }
+.line7 { left: 270px; }
+.line8 { left: 310px; }
+.line9 { left: 345px; }
+
+@keyframes animateLine {
+    0% { height: 50px; } 
+    50% { height: 150px; }
+    100% { height: 100px; } 
+}
+
+.line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .line9 {
+    animation: animateLine 1.5s infinite alternate; 
+}
+
+.line1 { animation: animateLine 1.5s infinite alternate; left: 60px; }
+.line2 { animation: animateLine 1.7s infinite alternate; left: 95px; }
+.line3 { animation: animateLine 1.9s infinite alternate; left: 130px; }
+.line4 { animation: animateLine 2.1s infinite alternate; left: 165px; }
+.line5 { animation: animateLine 2.3s infinite alternate; left: 200px; }
+.line6 { animation: animateLine 2.5s infinite alternate; left: 235px; }
+.line7 { animation: animateLine 2.7s infinite alternate; left: 270px; }
+.line8 { animation: animateLine 2.9s infinite alternate; left: 310px; }
+.line9 { animation: animateLine 3.1s infinite alternate; left: 345px; }
+
+.best-seller-section {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.best-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 68px;
+    color: white;
+}
+
+.green-text {
+    color: #A8FA50;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.best-card {
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 24px;
+    padding: 0rem 0rem 5rem 0rem;
+    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+}
+
+.best-image {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 12px;
+}
+
+.best-card-title {
+    color: #1B1F24;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.best-card-desc {
+    color: #1B1F24; 
+    font-weight: 400;
+    font-size: 14px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5rem 1rem; 
+    line-height: 1.5;
+}
+
+
+.section-two {
+    font-family: 'Poppins', sans-serif;
+    color: #A8FA50;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.section-two-title {
+    color: white;
+    font-weight: 800;
+    font-size: 44px;
+    margin: 6rem 0rem 3rem 0rem;
+    text-align: center;
+}
+
+.arrow {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    margin-bottom: 2rem;
+    width: 7rem;
+    cursor: pointer;
+}
+
+.song-list {
+    --visible-cards-count: 4;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.song-profile {
+    width: 10rem;
+    max-width: 10rem;
+    border-radius: 12px;
+}
+
+.song-card {
+    background-color: transparent;
+    border-radius: 24px;
+    padding: 1rem 1rem 5rem 1rem;
+    text-align: center;
+}
+
+.song-card:hover {
+    background-color: #35424A;
+    border-radius: 20px;
+    padding: 1rem 1rem 4rem 1rem;
+}
+
+.song-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.song-desc {
+    color: white;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1F24;
+    margin-top: 4rem;
+    padding: 1rem 8rem 3rem 5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#logo{  
+    width: 250px;
+}
+
+.footer-content{
+    display: flex;
+    padding: 2rem 4rem 2rem 4rem;
+    justify-content: center;
+    gap: 12rem;
+    margin-bottom: 1.8rem;
+}
+
+.desc-box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.desc-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.desc-title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.desc-info{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.desc-info a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(138, 138, 138);
+}
+
+.desc-info a:hover{
+    color: white;
+}
+
+.play-logo {
+    width: 8.3rem;
+}
+
+.app-logo {
+    width: 10rem;
+}
+
+.desc-info p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+
+.social-logo {
+    width: 24px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.copyright p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+/* Responsive 1200px*/
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    #hamburger-button {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    #hamburger-button #hamburger-img{
+        width: 70px;
+    }
+
+    #hamburger-menu{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #35424A;
+        height: 300px;
+        gap: 26px;
+        animation: dropdown 200ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+    .hamburger-item {
+        display: flex;
+    }
+
+    .hamburger-item a{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+    }
+
+    .hamburger-item a:hover{
+        border-bottom: 2px solid #A8FA50;
+    }
+
+    .section-description {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .wrapper {
+        margin-left: 60%;
+    }
+}
+
+/* Responsive 768px (tablets) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar-title {
+        display: none;
+    }
+
+    #hamburger-button {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    #hamburger-button #hamburger-img{
+        width: 70px;
+    }
+
+    #hamburger-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #35424A;
+        height: 300px;
+        gap: 26px;
+        animation: dropdown 200ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+
+    .hamburger-item {
+        display: flex;
+    }
+
+    .hamburger-item a{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+    }
+
+    .hamburger-item a:hover{
+        border-bottom: 2px solid #A8FA50;
+    }
+
+    .section-one {
+        height: 300px;
+        margin: 4rem;
+        padding: 2rem;
+    }
+
+    .bill-img {
+        width: 120%;
+        margin-bottom: -1.7rem;
+    }
+
+    .first-title, .box-desc {
+        font-size: 1rem;
+    }
+
+    .second-title {
+        font-size: 1.5rem;
+    }
+
+    .best-title {
+        font-size: 44px;
+    }
+
+    .card-container {
+        padding-left: 0;
+        margin-left: -15rem;
+        flex-direction: column;
+        max-width: 50px;
+    }
+
+    .section-description {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .wrapper {
+        margin-top: 15rem;
+        margin-left: 20%;
+    }
+
+    .song-list {
+        --visible-cards-count: 2;
+        justify-content: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+    }
+}
+
+/* Responsive 480px (mobile devices) */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .section-one {
+        height: 200px;
+        margin: 5rem 2rem 0 2rem;
+    }
+
+    .section-one-image {
+        padding: 0;
+        margin: 0;
+    }
+
+    .section-one-content {
+        margin-top: 0;
+    }
+
+    .bill-img {
+        width: 210px;
+        margin-right: 0;
+        margin-left: -7.2rem;
+        margin-top: -3rem;
+    }
+
+    .section-information-container {
+        margin: 0;
+    }
+
+    .section-information {
+        font-size: 44px;
+    }
+
+    .section-description {
+        margin: 1rem 0rem 0rem 0rem;
+        width: 300px;
+    }
+
+    .wrapper {
+        margin-left: 5%;
+    }
+
+    .section-two {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .song-list {
+        --visible-cards-count: 1;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .arrow {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
